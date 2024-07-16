@@ -1,4 +1,4 @@
-module clone
+module example/m
 
 go 1.22.5
 
@@ -6,8 +6,8 @@ require (
 	github.com/gin-contrib/cors v1.7.2
 	github.com/gin-gonic/gin v1.10.0
 	github.com/go-git/go-git/v5 v5.12.0
-	github.com/go-redis/redis v6.15.9+incompatible
-	github.com/icrowley/fake v0.0.0-20221112152111-d7b7e2276db2
+	github.com/icrowley/fake v0.0.0-20240710202011-f797eb4a99c0
+	github.com/redis/go-redis/v9 v9.5.4
 )
 
 require (
@@ -41,10 +41,8 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/onsi/ginkgo v1.16.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
-	github.com/redis/go-redis/v9 v9.5.3 // indirect
 	github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3 // indirect
 	github.com/skeema/knownhosts v1.2.2 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect

@@ -65,4 +65,7 @@ func building(id string) {
 	redis_push(id+": Building done.", "log:"+id)
 	redis_push(id+": Copying Built Folder in progress...", "log:"+id)
 	copy_for_serving(source_path, dest_path, id)
+
+	redis_push(id+": Deployment is ready at : "+"http://"+id+".localhost:3000/", "log:"+id)
+	redis_push("🙏 Thank you for using Deployit.", "log:"+id)
 }

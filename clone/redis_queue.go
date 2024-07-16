@@ -49,7 +49,7 @@ func redis_db_set(key string, value string) {
 
 	err := client.Set(ctx, key, value, 0)
 
-	if err != nil {
+	if err == nil {
 		log.Fatal("Error while setting value in redis DB", err)
 	}
 }
@@ -59,7 +59,7 @@ func redis_db_get(key string) string {
 
 	value, err := client.Get(ctx, key).Result()
 
-	if err != nil {
+	if err != redis.Nil && err != nil {
 		log.Fatal("Error while getting value in redis DB", err)
 	}
 
